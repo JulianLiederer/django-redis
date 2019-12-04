@@ -7,6 +7,7 @@ import copy
 import datetime
 import time
 import unittest
+import six
 from datetime import timedelta
 
 from django import VERSION
@@ -15,7 +16,7 @@ from django.contrib.sessions.backends.cache import SessionStore as CacheSession
 from django.core.cache import DEFAULT_CACHE_ALIAS, cache, caches
 from django.test import override_settings
 from django.test.utils import patch_logger
-from django.utils import six, timezone
+from django.utils import timezone
 from redis.exceptions import ConnectionError
 
 import django_redis.cache

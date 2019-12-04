@@ -5,12 +5,12 @@ from __future__ import absolute_import, unicode_literals
 import random
 import re
 import socket
+import six
 from collections import OrderedDict
 
 from django.conf import settings
 from django.core.cache.backends.base import DEFAULT_TIMEOUT, get_key_func
 from django.core.exceptions import ImproperlyConfigured
-from django.utils import six
 from django.utils.encoding import smart_text
 from django.utils.module_loading import import_string
 from redis.exceptions import ConnectionError, ResponseError, TimeoutError
